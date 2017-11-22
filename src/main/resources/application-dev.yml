@@ -1,0 +1,20 @@
+spring:
+  kafka:
+    producer:
+      retries: 1
+      batch-size: 16384
+      buffer-memory: 33554432
+      bootstrap-servers: 192.168.132.129:9092
+    consumer:
+      group-id: boot
+      auto-offset-reset: earliest
+      bootstrap-servers: 192.168.132.129:9092
+      enable-auto-commit: true
+      auto-commit-interval: 100
+    template:
+      default-topic: niemq
+
+#consumer default topic
+kafka:
+   topic:
+      name: niemq
