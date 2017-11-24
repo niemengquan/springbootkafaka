@@ -1,0 +1,11 @@
+#set( $iAmVariable = "good!" )
+Welcome ${name} to velocity.com
+today is ${date}.
+
+下面是一个for循环取值：
+#foreach ($i in $list)
+    $i
+#end
+这里从设置的变量里取的值:${iAmVariable}
+
+${person.name},性别：${person.sex},年龄：${person.age}
